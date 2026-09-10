@@ -1,0 +1,36 @@
+.
+├── README.md
+├── index.html
+├── package-lock.json
+├── package.json
+├── public
+│   ├── favicon.svg
+│   └── icons.svg
+├── src
+│   ├── App.tsx
+│   ├── assets
+│   │   ├── hero.png
+│   │   ├── react.svg
+│   │   └── vite.svg
+│   ├── componets
+│   │   └── common
+│   │       └── Button.tsx
+│   ├── context
+│   │   └── ThemeContext.tsx
+│   ├── data
+│   │   └── content.ts
+│   ├── index.css
+│   ├── main.tsx
+│   └── pages
+│       ├── CourseDetails.tsx
+│       ├── Courses.tsx
+│       ├── Home.tsx
+│       ├── Login.tsx
+│       └── Register.tsx
+├── structure.txt
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
+
+9 directories, 25 files

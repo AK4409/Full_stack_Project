@@ -49,11 +49,20 @@ npm run dev
 ***Use This to see in other devices in same network***
 
 ```bash
-npm run dev
+npm run dev -- --host
 ```
 
-***Folder Structure***
 
+
+
+
+
+
+
+***Folder Structure to achieve***
+
+
+```text
 src/
 │
 ├── assets/
@@ -99,3 +108,10 @@ src/
 ├── App.tsx
 ├── main.tsx
 └── index.css
+```
+
+
+***Current folder Structure***
+
+```bash
+tree -I 'node_modules|.git'
