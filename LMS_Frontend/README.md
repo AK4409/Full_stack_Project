@@ -40,8 +40,16 @@ npm run dev
 npm run dev
 ```
 
-***Folder Structure***
 
+*** Actual Folder Structure ***
+
+
+```bash
+tree -I 'node_modules|.git'
+```
+
+***Folder Structure target***
+```text
 src/
 │
 ├── assets/
@@ -87,3 +95,4 @@ src/
 ├── App.tsx
 ├── main.tsx
 └── index.css
+```
