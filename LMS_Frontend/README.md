@@ -13,17 +13,19 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite' # include this in vite.config.js
 ```
+```javascript
 export default defineConfig({
   plugins: [
     tailwindcss(), # add this plugin
   ],
 })
+```
 
 <br><br>
-Import Tailwind CSS
+***Import Tailwind CSS***
 Add an @import to your CSS file that imports Tailwind CSS.<br> <br>
 
-```bash 
+```javascript 
 @import "tailwindcss";
 ```
 
@@ -40,16 +42,8 @@ npm run dev
 npm run dev
 ```
 
+***Folder Structure***
 
-*** Actual Folder Structure ***
-
-
-```bash
-tree -I 'node_modules|.git'
-```
-
-***Folder Structure target***
-```text
 src/
 │
 ├── assets/
@@ -71,9 +65,9 @@ src/
 │       └── CourseFilter.tsx
 │
 ├── data/
-│   ├── courses.js
-│   ├── categories.js
-│   └── users.js
+│   ├── courses.ts
+│   ├── categories.ts
+│   └── users.ts
 │
 ├── pages/
 │   ├── Home.tsx
@@ -95,4 +89,3 @@ src/
 ├── App.tsx
 ├── main.tsx
 └── index.css
-```

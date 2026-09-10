@@ -9,7 +9,7 @@ interface ThemeContextValue {
 
 const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 
-const STORAGE_KEY = 'lms-theme';
+const STORAGE_KEY = 'nyb-theme';
 
 function getInitialTheme(): Theme {
   if (typeof window === 'undefined') return 'light';
