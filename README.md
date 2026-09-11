@@ -111,7 +111,7 @@ src/
 ```
 
 
-***Current folder Structure***
+***Current folder Structure can be seen by running this command in integrated terminal***
 
 ```bash
 tree -I 'node_modules|.git'
