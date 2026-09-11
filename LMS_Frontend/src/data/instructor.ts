@@ -1,0 +1,61 @@
+export const instructors = [
+    {
+      id: 1,
+      name: "John Smith",
+      role: "Senior Full Stack Developer",
+      bio: "Full-stack developer with more than 8 years of experience building web applications.",
+      avatar: "/images/instructors/john.jpg",
+      rating: 4.9,
+      students: 12450,
+      courses: 8,
+      expertise: ["React", "Node.js", "MongoDB", "JavaScript"],
+    },
+  
+    {
+      id: 2,
+      name: "Sarah Wilson",
+      role: "UI/UX Designer",
+      bio: "Product designer passionate about creating simple and meaningful digital experiences.",
+      avatar: "/images/instructors/sarah.jpg",
+      rating: 4.8,
+      students: 8420,
+      courses: 6,
+      expertise: ["Figma", "UI Design", "UX Research", "Design Systems"],
+    },
+  
+    {
+      id: 3,
+      name: "Michael Brown",
+      role: "Python & Data Science Instructor",
+      bio: "Data scientist and educator specializing in Python, machine learning and analytics.",
+      avatar: "/images/instructors/michael.jpg",
+      rating: 4.9,
+      students: 15680,
+      courses: 10,
+      expertise: ["Python", "Pandas", "Machine Learning", "Data Science"],
+    },
+  
+    {
+      id: 4,
+      name: "Emily Johnson",
+      role: "Mobile App Developer",
+      bio: "Mobile developer focused on React Native and cross-platform application development.",
+      avatar: "/images/instructors/emily.jpg",
+      rating: 4.7,
+      students: 6230,
+      courses: 5,
+      expertise: ["React Native", "Flutter", "Firebase"],
+    },
+  
+    {
+      id: 5,
+      name: "David Miller",
+      role: "DevOps Engineer",
+      bio: "DevOps engineer with experience in cloud infrastructure and automation.",
+      avatar: "/images/instructors/david.jpg",
+      rating: 4.8,
+      students: 7340,
+      courses: 7,
+      expertise: ["Docker", "AWS", "CI/CD", "Linux"],
+    },
+  ];
