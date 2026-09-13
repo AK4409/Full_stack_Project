@@ -1,35 +1,25 @@
-
-import { Route, Routes } from 'react-router-dom'
-import './index.css'
-import Home from './pages/Home'
+import { Route, Routes } from "react-router-dom";
+import "./index.css";
+import Home from "./pages/Home";
 import Sidebar from './componets/layout/Sidebar'
-import Navbar from './componets/layout/Navbar'
-import Footer from './componets/layout/Footer'
-
+import Navbar from "./componets/layout/Navbar";
+import Dashboard from "./pages/student/Dashboard";
+import Footer from "./componets/layout/Footer";
 
 function App() {
-  
-
   return (
-    
     <>
       
       <Routes>
-        <Route element={
-          <>
-            <Navbar/>
-            <Sidebar/>
-          </>
-        }>
-          <Route path='/' element={<Home/>}/>
+        
+        <Route path="/" element={<Home />} />
+        <Route path="/std/dashboard" element={<Dashboard />} />
 
-
-        </Route>
         
       </Routes>
-      <Footer/> 
+      
     </>
-  )
+  );
 }
 
-export default App
+export default App;

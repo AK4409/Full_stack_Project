@@ -15,7 +15,7 @@ function Sidebar() {
            </ul>
         </div>
         <div>  
-            <Home/>
+            
         </div>
         
     </div>

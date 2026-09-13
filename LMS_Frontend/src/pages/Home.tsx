@@ -62,8 +62,9 @@ function Home() {
   return (
     <div>
       <Navbar/>
-      <Footer/>
+      
       <Sidebar/>
+      <Footer/>
     </div>
   )
 }
