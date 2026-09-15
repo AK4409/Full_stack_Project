@@ -1,13 +1,15 @@
-
-
-
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
 import SocialLinks from "../common/SocialLinks";
+import SearchBox from "./SearchBox";
+import { useNavigate } from "react-router-dom";
+
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const navigate = useNavigate();
 
   // Navlinks
   const navLinks = [
@@ -16,21 +18,31 @@ function Navbar() {
     { name: "Courses", path: "/courses" },
     { name: "Contact", path: "/contact" },
     { name: "Career", path: "/career" },
-    { name: "Login", path: "/login" },
+    { name: "Signin", 
+      path: "/Sign in",
+      highlight: true,
+    },
   ];
 
+  // Courses links
+  const CoursesLinks=[
+    {name: "Frontend Development", path: "/frontend"},
+    {name: "Backend Development", path: "/backend"},
+    {name: "Full Stack Web Development", path: "/fullstack"},
+    {name: "MEAN Stack", path: "/mean"},
+    {name: "MERN Stack", path: "/mern"},
+    {name: "Python Training", path: "/python"},
+    {name: "Machine Learning", path: "/ml"},
+    {name: "DevOps Training", path: "/devops"}
+  ];
 
   return (
     <nav className="bg-indigo-600 text-white shadow-lg">
-
       <div className="max-w-7xl mx-auto px-5 py-4">
-
         {/* ================= TOP NAVBAR ================= */}
         <div className="flex items-center justify-between">
-
           {/* Logo & Brand */}
           <div className="flex items-center gap-3">
-
             <NavLink to="/">
               <img
                 src="/logo3.png"
@@ -54,74 +66,23 @@ function Navbar() {
                 Estd. 2082
               </p>
             </div>
-
           </div>
-
+          <div className="hidden sm:block w-xs">
+            <SearchBox items={[...CoursesLinks, ...navLinks]}/>
+          </div>
+          
 
           {/* ================= DESKTOP RIGHT SECTION ================= */}
           <div className="hidden sm:flex flex-col items-end">
-
             {/* Social Media */}
+            
             <SocialLinks className="mb-4 text-xl" />
-            {/* <div className="flex items-center gap-4 mb-4">
-
-              <a
-                href="https://www.instagram.com/cloudsnepal_web"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="text-xl hover:text-pink-300 hover:scale-110 transition-all duration-200"
-              >
-                <BsInstagram />
-              </a>
-
-              <a
-                href="https://www.facebook.com/Clouds-Nepal-Web"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="text-2xl hover:text-blue-300 hover:scale-110 transition-all duration-200"
-              >
-                <TbBrandFacebook />
-              </a>
-
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="text-xl hover:text-blue-300 hover:scale-110 transition-all duration-200"
-              >
-                <LuLinkedin />
-              </a>
-
-            </div> */}
+            
             {/* Desktop Navigation */}
-  <ul className="flex items-center gap-5 lg:gap-7 text-base lg:text-lg font-semibold">
-    {navLinks.map((link) => (
-      <li key={link.name}>
-        <NavLink
-          to={link.path}
-          className={({ isActive }) =>
-            `transition-colors duration-200 ${
-              isActive
-                ? "text-green-300"
-                : "text-white hover:text-green-300"
-            }`
-          }
-        >
-          {link.name}
-        </NavLink>
-      </li>
-    ))}
-  </ul>
-
-            {/* Desktop Navigation
             <ul className="flex items-center gap-5 lg:gap-7 text-base lg:text-lg font-semibold">
-
-              {navLinks.map((link) => (
+            
+              {/* {navLinks.map((link) => (
                 <li key={link.name}>
-
                   <NavLink
                     to={link.path}
                     className={({ isActive }) =>
@@ -134,22 +95,35 @@ function Navbar() {
                   >
                     {link.name}
                   </NavLink>
-
                 </li>
-              ))}
+              ))} */}
 
-            </ul> */}
-
+{navLinks.map((link) => (
+  <li key={link.name}>
+    <NavLink
+      to={link.path}
+      className={({ isActive }) =>
+        `transition-all duration-200 ${
+          link.highlight
+            ? "rounded-full border border-green-300 px-4 py-2 hover:bg-green-300 hover:text-indigo-900"
+            : isActive
+              ? "text-green-300"
+              : "text-white hover:text-green-300"
+        }`
+      }
+    >
+      {link.name}
+    </NavLink>
+  </li>
+))}
+            </ul>
+            
           </div>
-
 
           {/* ================= MOBILE RIGHT SECTION ================= */}
           <div className="flex sm:hidden items-center gap-4">
-
             {/* Mobile Social Media Icons */}
             <SocialLinks className="gap-3 text-lg" />
-            
-
 
             {/* Hamburger / Close Button */}
             <button
@@ -160,21 +134,18 @@ function Navbar() {
             >
               {menuOpen ? <HiX /> : <HiMenu />}
             </button>
-
+            
           </div>
-
+          
+          
         </div>
 
-
         {/* ================= MOBILE MENU ================= */}
-        {menuOpen && (
+        {/* {menuOpen && (
           <div className="sm:hidden mt-5 border-t border-indigo-400 pt-4">
-
             <ul className="flex flex-col items-start gap-4 text-lg font-semibold">
-
               {navLinks.map((link) => (
                 <li key={link.name}>
-
                   <NavLink
                     to={link.path}
                     onClick={() => setMenuOpen(false)}
@@ -188,20 +159,56 @@ function Navbar() {
                   >
                     {link.name}
                   </NavLink>
-
                 </li>
               ))}
-
             </ul>
-
+            
           </div>
-        )}
+          
+        )} */}
 
+{menuOpen && (
+  <div className="sm:hidden mt-5 border-t border-indigo-400 pt-4">
+
+    {/* Mobile Search */}
+    <div className="mb-5">
+      <SearchBox
+        items={[...CoursesLinks, ...navLinks]}
+        onSelect={(item) => {
+          navigate(item.path);
+          setMenuOpen(false);
+        }}
+      />
+    </div>
+
+    {/* Mobile Navigation */}
+    <ul className="flex flex-col items-start gap-4 text-lg font-semibold">
+      {navLinks.map((link) => (
+        <li key={link.name}>
+          <NavLink
+            to={link.path}
+            onClick={() => setMenuOpen(false)}
+            className={({ isActive }) =>
+              `block py-1 transition-colors duration-200 ${
+                isActive
+                  ? "text-green-300"
+                  : "text-white hover:text-green-300"
+              }`
+            }
+          >
+            {link.name}
+          </NavLink>
+        </li>
+      ))}
+    </ul>
+
+  </div>
+)}
+        
       </div>
-
+      
     </nav>
   );
 }
 
 export default Navbar;
-

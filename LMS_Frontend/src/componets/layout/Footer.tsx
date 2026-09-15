@@ -31,7 +31,7 @@ function Footer() {
     {name: "Python Training", path: "/python"},
     {name: "Machine Learning", path: "/ml"},
     {name: "DevOps Training", path: "/devops"}
-  ]
+  ];
 
   return (
     <footer className="bg-indigo-600 text-white">
