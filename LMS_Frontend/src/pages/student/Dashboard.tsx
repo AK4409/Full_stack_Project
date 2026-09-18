@@ -101,9 +101,13 @@ function StudentDashboard() {
                   onClick={() => navigate(`/student/learn/${course.id}`)}
                 >
                   <div className="flex items-center gap-4 flex-1 min-w-0">
-                    <div className="w-12 h-12 bg-gradient-to-br from-indigo-400 to-purple-500 rounded-xl flex items-center justify-center text-white font-bold text-lg shrink-0">
-                      {course.title[0]}
-                    </div>
+                  <div className="w-full lg:w-16 h-16 rounded-xl overflow-hidden shrink-0">
+                    <img
+                      src={course.thumbnail}
+                      alt={course.title}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
                     <div className="flex-1 min-w-0">
                       <h3 className="font-semibold text-gray-800 text-sm truncate group-hover:text-indigo-700 transition-colors">
                         {course.title}

@@ -1,10 +1,10 @@
 export const instructors = [
     {
       id: 1,
-      name: "John Smith",
+      name: "Ajay Shrestha",
       role: "Senior Full Stack Developer",
       bio: "Full-stack developer with more than 8 years of experience building web applications.",
-      avatar: "/images/instructors/john.jpg",
+      avatar: "/images/instructors/ajay.jpeg",
       rating: 4.9,
       students: 12450,
       courses: 8,
@@ -13,10 +13,10 @@ export const instructors = [
   
     {
       id: 2,
-      name: "Sarah Wilson",
+      name: "Nirajan Chaudhary",
       role: "UI/UX Designer",
       bio: "Product designer passionate about creating simple and meaningful digital experiences.",
-      avatar: "/images/instructors/sarah.jpg",
+      avatar: "/images/instructors/nirajan.jpeg",
       rating: 4.8,
       students: 8420,
       courses: 6,
@@ -25,10 +25,10 @@ export const instructors = [
   
     {
       id: 3,
-      name: "Michael Brown",
+      name: "Sobit Gaha Thapa Magar",
       role: "Python & Data Science Instructor",
       bio: "Data scientist and educator specializing in Python, machine learning and analytics.",
-      avatar: "/images/instructors/michael.jpg",
+      avatar: "/images/instructors/sobit.jpeg",
       rating: 4.9,
       students: 15680,
       courses: 10,
@@ -37,10 +37,10 @@ export const instructors = [
   
     {
       id: 4,
-      name: "Emily Johnson",
+      name: "Keshav Dhami",
       role: "Mobile App Developer",
       bio: "Mobile developer focused on React Native and cross-platform application development.",
-      avatar: "/images/instructors/emily.jpg",
+      avatar: "/images/instructors/keshav.jpeg",
       rating: 4.7,
       students: 6230,
       courses: 5,
@@ -49,10 +49,10 @@ export const instructors = [
   
     {
       id: 5,
-      name: "David Miller",
+      name: "Nischal Basnet",
       role: "DevOps Engineer",
       bio: "DevOps engineer with experience in cloud infrastructure and automation.",
-      avatar: "/images/instructors/david.jpg",
+      avatar: "/images/instructors/nischal.jpeg",
       rating: 4.8,
       students: 7340,
       courses: 7,

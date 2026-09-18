@@ -15,9 +15,12 @@ function AdminCourses() {
     setCourseList((prev) =>
       prev.map((course) =>
         course.id === id
-          ? { ...course, status: course.status === "published" ? "draft" : "published" }
-          : course
-      )
+          ? {
+              ...course,
+              status: course.status === "published" ? "draft" : "published",
+            }
+          : course,
+      ),
     );
   };
 
@@ -33,7 +36,8 @@ function AdminCourses() {
       <div className="max-w-6xl">
         <h1 className="text-2xl font-black text-gray-800 mb-2">All Courses</h1>
         <p className="text-sm text-gray-500 mb-6">
-          Review instructor courses, unpublish them, or remove them from the catalog.
+          Review instructor courses, unpublish them, or remove them from the
+          catalog.
         </p>
 
         {courseList.length === 0 ? (
@@ -43,18 +47,27 @@ function AdminCourses() {
         ) : (
           <div className="space-y-4">
             {courseList.map((course) => {
-              const instructor = instructors.find((i) => i.id === course.instructorId);
+              const instructor = instructors.find(
+                (i) => i.id === course.instructorId,
+              );
               return (
                 <div
                   key={course.id}
                   className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 sm:p-5 flex flex-col lg:flex-row lg:items-center gap-4"
                 >
-                  <div className="w-full lg:w-16 h-16 bg-gradient-to-br from-indigo-400 to-purple-600 rounded-xl flex items-center justify-center text-white text-2xl font-black shrink-0">
-                    {course.title[0]}
+                  
+                  <div className="w-full lg:w-16 h-16 rounded-xl overflow-hidden shrink-0">
+                    <img
+                      src={course.thumbnail}
+                      alt={course.title}
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-wrap items-center gap-2 mb-1">
-                      <h3 className="font-bold text-gray-800">{course.title}</h3>
+                      <h3 className="font-bold text-gray-800">
+                        {course.title}
+                      </h3>
                       <Badge text={course.status} />
                       <Badge text={course.level} />
                     </div>
@@ -63,7 +76,8 @@ function AdminCourses() {
                     </p>
                     <div className="flex flex-wrap items-center gap-3 text-xs text-gray-400 mt-2">
                       <span className="flex items-center gap-1">
-                        <FiUsers size={11} /> {course.studentsCount.toLocaleString()} students
+                        <FiUsers size={11} />{" "}
+                        {course.studentsCount.toLocaleString()} students
                       </span>
                       <StarRating rating={course.rating} size="sm" showValue />
                       <span>${course.price}</span>
@@ -74,7 +88,11 @@ function AdminCourses() {
                       onClick={() => toggleStatus(course.id)}
                       className="flex items-center gap-1.5 text-xs font-bold text-indigo-600 border border-indigo-200 hover:bg-indigo-50 px-3 py-2 rounded-lg"
                     >
-                      {course.status === "published" ? <FiEyeOff size={13} /> : <FiEye size={13} />}
+                      {course.status === "published" ? (
+                        <FiEyeOff size={13} />
+                      ) : (
+                        <FiEye size={13} />
+                      )}
                       {course.status === "published" ? "Unpublish" : "Publish"}
                     </button>
                     <button
@@ -91,7 +109,12 @@ function AdminCourses() {
         )}
       </div>
 
-      <Modal isOpen={deleteId !== null} onClose={() => setDeleteId(null)} title="Delete course" size="sm">
+      <Modal
+        isOpen={deleteId !== null}
+        onClose={() => setDeleteId(null)}
+        title="Delete course"
+        size="sm"
+      >
         <div className="text-center">
           <p className="text-gray-600 mb-6 text-sm">
             Delete this course from the admin catalog view?

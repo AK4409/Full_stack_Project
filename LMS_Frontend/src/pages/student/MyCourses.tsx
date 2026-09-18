@@ -63,9 +63,13 @@ function MyCourses() {
             const pct = progress[course.id] ?? 0;
             return (
               <div key={course.id} className="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-gray-100 flex flex-col sm:flex-row gap-4 sm:gap-5">
-                <div className="w-full sm:w-20 h-20 bg-gradient-to-br from-indigo-400 to-purple-600 rounded-xl flex items-center justify-center text-white text-2xl font-black shrink-0">
-                  {course.title[0]}
-                </div>
+                <div className="w-full lg:w-16 h-16 rounded-xl overflow-hidden shrink-0">
+                    <img
+                      src={course.thumbnail}
+                      alt={course.title}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
 
                 <div className="flex-1 min-w-0">
                   <div className="flex items-start justify-between gap-3 mb-2">

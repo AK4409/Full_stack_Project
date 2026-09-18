@@ -7,7 +7,7 @@ export const courses = [
         "Learn React from the fundamentals to advanced concepts and build modern web applications.",
       shortDescription:
         "Master React and build modern web applications.",
-      thumbnail: "/images/courses/react.jpg",
+      thumbnail: "/images/course/react.png",
       instructorId: 1,
       categoryId: 1,
       level: "Beginner",
@@ -47,7 +47,7 @@ export const courses = [
         "Learn backend development using Node.js, Express.js and REST APIs.",
       shortDescription:
         "Build powerful backend applications using Node.js.",
-      thumbnail: "/images/courses/node.jpg",
+      thumbnail: "/images/course/Nodejs.png",
       instructorId: 1,
       categoryId: 1,
       level: "Intermediate",
@@ -86,7 +86,7 @@ export const courses = [
         "Learn MongoDB, Mongoose and modern NoSQL database design.",
       shortDescription:
         "Learn MongoDB and build scalable database systems.",
-      thumbnail: "/images/courses/mongodb.jpg",
+      thumbnail: "/images/course/mongodb.png",
       instructorId: 1,
       categoryId: 6,
       level: "Intermediate",
@@ -122,7 +122,7 @@ export const courses = [
         "Master modern JavaScript including ES6+, asynchronous programming and advanced concepts.",
       shortDescription:
         "Learn modern JavaScript from beginner to advanced.",
-      thumbnail: "/images/courses/javascript.jpg",
+      thumbnail: "/images/course/js.jpeg",
       instructorId: 1,
       categoryId: 2,
       level: "Beginner",
@@ -159,7 +159,7 @@ export const courses = [
         "Learn UI/UX design principles and create professional interfaces using Figma.",
       shortDescription:
         "Design beautiful interfaces with Figma.",
-      thumbnail: "/images/courses/figma.jpg",
+      thumbnail: "/images/course/figma.avif",
       instructorId: 2,
       categoryId: 4,
       level: "Beginner",
@@ -195,7 +195,7 @@ export const courses = [
         "Learn Python programming and data analysis using popular data science libraries.",
       shortDescription:
         "Learn Python and start your data science journey.",
-      thumbnail: "/images/courses/python.jpg",
+      thumbnail: "/images/course/Python.png",
       instructorId: 3,
       categoryId: 3,
       level: "Beginner",
@@ -230,7 +230,7 @@ export const courses = [
         "Build cross-platform mobile applications using React Native.",
       shortDescription:
         "Build Android and iOS apps using React Native.",
-      thumbnail: "/images/courses/react-native.jpg",
+      thumbnail: "/images/course/reactnative.png",
       instructorId: 4,
       categoryId: 5,
       level: "Intermediate",
@@ -268,7 +268,7 @@ export const courses = [
         "Learn Docker, containers, CI/CD and the fundamentals of DevOps.",
       shortDescription:
         "Learn the fundamentals of Docker and DevOps.",
-      thumbnail: "/images/courses/docker.jpg",
+      thumbnail: "/images/course/docker.png",
       instructorId: 5,
       categoryId: 7,
       level: "Intermediate",

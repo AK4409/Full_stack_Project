@@ -68,8 +68,13 @@ function InstructorDashboard() {
             {instructorCourses.map((course) => (
               <div key={course.id} className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 p-4 rounded-xl bg-gray-50 hover:bg-indigo-50 transition-colors">
                 <div className="flex items-center gap-4 flex-1 min-w-0">
-                  <div className="w-12 h-12 bg-gradient-to-br from-indigo-400 to-purple-600 rounded-xl flex items-center justify-center text-white font-bold text-lg shrink-0">
-                    {course.title[0]}
+                 
+                  <div className="w-full lg:w-16 h-16 rounded-xl overflow-hidden shrink-0">
+                    <img
+                      src={course.thumbnail}
+                      alt={course.title}
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="font-semibold text-gray-800 text-sm truncate">{course.title}</h3>
@@ -96,7 +101,7 @@ function InstructorDashboard() {
             {recentReviews.map((review) => (
               <div key={review.id} className="flex items-start gap-4 pb-4 border-b border-gray-100 last:border-0 last:pb-0">
                 <img
-                  src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${review.userName}`}
+                  src={review.avatar}
                   alt={review.userName}
                   className="w-9 h-9 rounded-full border-2 border-gray-100 shrink-0"
                 />

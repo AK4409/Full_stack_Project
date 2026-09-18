@@ -48,9 +48,13 @@ function InstructorCourses() {
         <div className="space-y-4">
           {courseList.map((course) => (
             <div key={course.id} className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 sm:p-5 flex flex-col lg:flex-row gap-4 lg:gap-5 lg:items-center hover:border-indigo-200 transition-colors">
-              <div className="w-full lg:w-20 h-16 bg-gradient-to-br from-indigo-400 to-purple-600 rounded-xl flex items-center justify-center text-white text-2xl font-black shrink-0">
-                {course.title[0]}
-              </div>
+             <div className="w-full lg:w-16 h-16 rounded-xl overflow-hidden shrink-0">
+                    <img
+                      src={course.thumbnail}
+                      alt={course.title}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
 
               <div className="flex-1 min-w-0">
                 <div className="flex flex-wrap items-center gap-3 mb-1.5">

@@ -23,7 +23,7 @@ const DEMO_USERS = [
   {
     label: "Admin",
     role: "admin" as UserRole,
-    email: "admin@example.com",
+    email: "admin@cloudcode.com.np",
     color: "bg-slate-800 hover:bg-slate-900",
   },
 ];
@@ -82,7 +82,7 @@ function Login() {
             {/* Header */}
             <div className="text-center mb-8">
               <div className="w-16 h-16 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-indigo-200">
-                <span className="text-white font-black text-xl">CC</span>
+                <span className="text-white font-black text-xl hover:scale-125"><img src="/logo3.png" alt="logo" /></span>
               </div>
               <h1 className="text-2xl font-black text-gray-800">Welcome Back!</h1>
               <p className="text-gray-500 text-sm mt-1">Sign in to continue your learning journey</p>
@@ -118,7 +118,7 @@ function Login() {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="aayush@example.com"
+                placeholder="user@gmail.com"
                 required
               />
 

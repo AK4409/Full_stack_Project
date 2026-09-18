@@ -104,7 +104,7 @@ function CourseDetails() {
             {instructor && (
               <div className="flex items-center gap-3">
                 <img
-                  src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${instructor.name}`}
+                  src={instructor.avatar}
                   alt={instructor.name}
                   className="w-9 h-9 rounded-full border-2 border-indigo-400"
                 />
@@ -204,7 +204,7 @@ function CourseDetails() {
                 <h2 className="text-xl font-black text-gray-800 mb-5">Your Instructor</h2>
                 <div className="flex items-start gap-4">
                   <img
-                    src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${instructor.name}`}
+                    src={instructor.avatar}
                     alt={instructor.name}
                     className="w-16 h-16 rounded-full border-3 border-indigo-100 shrink-0"
                   />
@@ -230,7 +230,7 @@ function CourseDetails() {
                   {courseReviews.map((review) => (
                     <div key={review.id} className="flex items-start gap-4 pb-5 border-b border-gray-100 last:border-0 last:pb-0">
                       <img
-                        src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${review.userName}`}
+                        src={review.avatar}
                         alt={review.userName}
                         className="w-10 h-10 rounded-full border-2 border-gray-100 shrink-0"
                       />
