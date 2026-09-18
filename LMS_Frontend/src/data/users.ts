@@ -1,17 +1,17 @@
 export const users = [
     {
       id: 1,
-      name: "Aayush Kayast",
-      email: "aayush@example.com",
+      name: "Rishav Baraili",
+      email: "rishav1@gmail.com",
       role: "student",
-      avatar: "/images/users/aayush.jpg",
+      avatar: "/images/users/rishav.jpg",
   
       enrolledCourses: [1, 2, 3],
   
       completedCourses: [],
   
       progress: {
-        1: 68,
+        1: 78,
         2: 35,
         3: 20,
       },
@@ -19,24 +19,24 @@ export const users = [
   
     {
       id: 2,
-      name: "John Smith",
-      email: "john@example.com",
+      name: "Ajay Shresthha",
+      email: "ajay123@gmail.com",
       role: "instructor",
-      avatar: "/images/instructors/john.jpg",
+      avatar: "/images/instructors/ajay.jpg",
     },
   
     {
       id: 3,
-      name: "Sarah Wilson",
-      email: "sarah@example.com",
+      name: "Sobit Thapa",
+      email: "sobit@gmail.com",
       role: "instructor",
-      avatar: "/images/instructors/sarah.jpg",
+      avatar: "/images/instructors/sobit.jpg",
     },
   
     {
       id: 4,
-      name: "Admin User",
-      email: "admin@example.com",
+      name: "Admin",
+      email: "admin@cloudcode.com",
       role: "admin",
       avatar: "/images/users/admin.jpg",
     },
