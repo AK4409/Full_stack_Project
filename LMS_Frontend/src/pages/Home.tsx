@@ -149,9 +149,14 @@ function Home() {
       {/* ===== CLIENTS ===== */}
       <section className="bg-gray-50 py-10 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
-          <p className="text-center text-sm text-gray-500 font-medium mb-6">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-black text-gray-800 mb-3">
+              Our Clients
+            </h2>
+          <p className="text-gray-500 max-w-xl mx-auto">
             Our graduates work at leading companies
           </p>
+          </div>
 
           <div className="flex flex-wrap items-center justify-center gap-8">
             {clientLogo.map((client) => (

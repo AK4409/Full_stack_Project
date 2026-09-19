@@ -48,56 +48,121 @@ npm run dev -- --host
 tree -I 'node_modules|.git'
 ```
 
-
-
-***Folder Structure to be achived***
-
 ```text
-src/
-│
-├── assets/
-│
-├── components/
-│   ├── common/
-│   │   ├── Button.tsx
-│   │   ├── Input.tsx
-│   │   └── Modal.tsx
-│   │
-│   ├── layout/
-│   │   ├── Navbar.tsx
-│   │   ├── Footer.tsx
-│   │   └── Sidebar.tsx
-│   │
-│   └── course/
-│       ├── CourseCard.tsx
-│       ├── CourseGrid.tsx
-│       └── CourseFilter.tsx
-│
-├── data/
-│   ├── courses.ts
-│   ├── categories.ts
-│   └── users.ts
-│
-├── pages/
-│   ├── Home.tsx
-│   ├── Courses.tsx
-│   ├── CourseDetails.tsx
-│   ├── Login.tsx
-│   ├── Register.tsx
-│   │
-│   ├── student/
-│   │   ├── Dashboard.tsx
-│   │   ├── MyCourses.tsx
-│   │   └── Profile.tsx
-│   │
-│   └── instructor/
-│       ├── Dashboard.tsx
+.
+├── README.md
+├── index.html
+├── package-lock.json
+├── package.json
+├── public
+│   ├── favicon.svg
+│   ├── icons.svg
+│   ├── images
+│   │   ├── admin
+│   │   │   └── admin.jpg
+│   │   ├── course
+│   │   │   ├── Nodejs.png
+│   │   │   ├── Python.png
+│   │   │   ├── docker.png
+│   │   │   ├── figma.avif
+│   │   │   ├── js.jpeg
+│   │   │   ├── mongodb.png
+│   │   │   ├── react.png
+│   │   │   └── reactnative.png
+│   │   ├── instructors
+│   │   │   ├── ajay.jpeg
+│   │   │   ├── keshav.jpeg
+│   │   │   ├── nirajan.jpeg
+│   │   │   ├── nischal.jpeg
+│   │   │   └── sobit.jpeg
+│   │   ├── testimonials
+│   │   │   ├── anjali.jpeg
+│   │   │   ├── priyasharma.jpg
+│   │   │   └── rohan.jpeg
+│   │   └── users
+│   │       ├── anish.webp
+│   │       ├── anjila.jpeg
+│   │       ├── rohan.jpeg
+│   │       └── sangita.jpeg
+│   ├── logo.png
+│   ├── logo1.jpg
+│   ├── logo2.avif
+│   └── logo3.png
+├── src
+│   ├── App.tsx
+│   ├── assets
+│   │   ├── brand
+│   │   │   ├── img1.png
+│   │   │   ├── img2.png
+│   │   │   ├── img3.png
+│   │   │   └── img4.png
+│   │   ├── hero.png
+│   │   ├── react.svg
+│   │   └── vite.svg
+│   ├── componets
+│   │   ├── common
+│   │   │   ├── Badge.tsx
+│   │   │   ├── Button.tsx
+│   │   │   ├── Input.tsx
+│   │   │   ├── Modal.tsx
+│   │   │   ├── ProgressBar.tsx
+│   │   │   ├── SocialLinks.tsx
+│   │   │   └── StarRating.tsx
+│   │   ├── course
+│   │   │   ├── CourseCard.tsx
+│   │   │   ├── CourseFilter.tsx
+│   │   │   └── CourseGrid.tsx
+│   │   └── layout
+│   │       ├── DashboardLayout.tsx
+│   │       ├── Footer.tsx
+│   │       ├── Navbar.tsx
+│   │       ├── SearchBox.tsx
+│   │       └── Sidebar.tsx
+│   ├── context
+│   │   ├── AuthContext.tsx
+│   │   └── ThemeContext.tsx
+│   ├── data
+│   │   ├── assignments.ts
+│   │   ├── categories.ts
+│   │   ├── certificates.ts
+│   │   ├── client.ts
+│   │   ├── courses.ts
+│   │   ├── instructor.ts
+│   │   ├── lessons.ts
+│   │   ├── notifications.ts
+│   │   ├── quizzes.ts
+│   │   ├── reviews.ts
+│   │   └── users.ts
+│   ├── index.css
+│   ├── main.tsx
+│   └── pages
+│       ├── About.tsx
+│       ├── Contact.tsx
+│       ├── CourseDetails.tsx
 │       ├── Courses.tsx
-│       └── CreateCourse.tsx
-│
-├── App.tsx
-├── main.tsx
-└── index.css
+│       ├── Home.tsx
+│       ├── Login.tsx
+│       ├── Register.tsx
+│       ├── admin
+│       │   ├── Courses.tsx
+│       │   ├── Dashboard.tsx
+│       │   └── Users.tsx
+│       ├── instructor
+│       │   ├── Courses.tsx
+│       │   ├── CreateCourse.tsx
+│       │   └── Dashboard.tsx
+│       └── student
+│           ├── CourseLearn.tsx
+│           ├── Dashboard.tsx
+│           ├── MyCourses.tsx
+│           ├── Profile.tsx
+│           └── Quiz.tsx
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
+
+21 directories, 91 files
 ```
 
 ```bash
