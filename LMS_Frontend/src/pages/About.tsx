@@ -82,7 +82,7 @@ function About() {
                 Explore Our Courses →
               </button>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-4">
               {[
                 { icon: "🎓", label: "50,000+", desc: "Students Graduated" },
                 { icon: "📚", label: "300+", desc: "Courses Available" },

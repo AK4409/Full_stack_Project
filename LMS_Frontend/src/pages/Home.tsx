@@ -186,7 +186,7 @@ function Home() {
               Find the perfect course in your area of interest
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {categories.map((cat) => (
               <button
                 key={cat.id}

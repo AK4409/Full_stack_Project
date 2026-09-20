@@ -78,7 +78,7 @@ function Contact() {
               {
                 icon: <FiClock className="text-indigo-600" size={22} />,
                 title: "Office Hours",
-                lines: ["Sun – Fri: 8:00 AM – 6:00 PM", "Sat: 10:00 AM – 3:00 PM"],
+                lines: ["Sun – Thu: 9:00 AM – 5:00 PM", "Fri: 10:00 AM – 3:00 PM"],
               },
             ].map((card) => (
               <div key={card.title} className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 flex items-start gap-4">
