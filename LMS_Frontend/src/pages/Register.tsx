@@ -78,7 +78,7 @@ function Register() {
             {/* Header */}
             <div className="text-center mb-8">
               <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-emerald-200">
-                <span className="text-white font-black text-xl">CC</span>
+                <span className="text-white font-black text-xl"><img src="/logo3.png" alt="logo" /></span>
               </div>
               <h1 className="text-2xl font-black text-gray-800">Create Account</h1>
               <p className="text-gray-500 text-sm mt-1">Join 50,000+ learners on Cloud Code</p>
@@ -90,7 +90,7 @@ function Register() {
                 label="Full Name"
                 value={form.name}
                 onChange={(e) => updateField("name", e.target.value)}
-                placeholder="Aayush Kayast"
+                placeholder="Username"
                 error={errors.name}
                 required
               />
@@ -100,7 +100,7 @@ function Register() {
                 type="email"
                 value={form.email}
                 onChange={(e) => updateField("email", e.target.value)}
-                placeholder="you@example.com"
+                placeholder="user@gmail.com"
                 error={errors.email}
                 required
               />
