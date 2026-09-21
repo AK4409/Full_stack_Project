@@ -50,7 +50,7 @@ function About() {
           </h1>
           <p className="text-xl text-indigo-200 leading-relaxed max-w-2xl mx-auto">
             We're on a mission to democratize tech education across Nepal and
-            beyond — making world-class learning accessible to everyone,
+            beyond  making worldClass learning accessible to everyone,
             everywhere.
           </p>
         </div>
@@ -82,7 +82,7 @@ function About() {
                 Explore Our Courses →
               </button>
             </div>
-            <div className="grid grid-cols-1 gap-4">
+            <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-4">
               {[
                 { icon: "🎓", label: "50,000+", desc: "Students Graduated" },
                 { icon: "📚", label: "300+", desc: "Courses Available" },
