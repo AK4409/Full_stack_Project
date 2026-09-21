@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import ScrollToTop from "./context/ScrollToTop";
 import "./index.css";
 
 // Public Pages
@@ -27,8 +28,12 @@ import AdminDashboard from "./pages/admin/Dashboard";
 import AdminUsers from "./pages/admin/Users";
 import AdminCourses from "./pages/admin/Courses";
 
+
 function App() {
   return (
+    <>
+    <ScrollToTop/>
+   
     <Routes>
       {/* Public Routes */}
       <Route path="/" element={<Home />} />
@@ -56,6 +61,8 @@ function App() {
       <Route path="/admin/users" element={<AdminUsers />} />
       <Route path="/admin/courses" element={<AdminCourses />} />
     </Routes>
+    
+    </>
   );
 }
 
