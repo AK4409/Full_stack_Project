@@ -32,7 +32,7 @@ function CourseCard({ course, instructorName = "Cloud Code" }: CourseCardProps) 
   return (
     <div
       onClick={() => navigate(`/courses/${course.id}`)}
-      className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 hover:border-indigo-200 transition-all duration-300 cursor-pointer flex flex-col"
+      className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 hover:border-indigo-200 transition-all duration-300 cursor-pointer flex flex-col hover:scale-105"
     >
       {/* Thumbnail */}
       <div className="relative overflow-hidden h-44 bg-gradient-to-br from-indigo-500 to-purple-600">
