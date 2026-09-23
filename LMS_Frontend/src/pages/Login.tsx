@@ -16,7 +16,7 @@ const DEMO_USERS = [
   },
   {
     label: "Instructor",
-    role: "instructor" as UserRole,
+    role: "instructor" as UserRole, 
     email: "ajay56@gmail.com",
     color: "bg-purple-600 hover:bg-purple-700",
   },
@@ -151,7 +151,7 @@ function Login() {
                 type="submit"
                 className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold py-3.5 rounded-xl hover:opacity-90 transition-all hover:-translate-y-0.5 shadow-md shadow-indigo-200"
               >
-                Sign In
+                Sign In hello
               </button>
             </form>
 
